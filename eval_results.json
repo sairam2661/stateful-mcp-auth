@@ -1,0 +1,2013 @@
+{
+  "summary": {
+    "total_requests": 200,
+    "block_rate": 100.0,
+    "false_positive_rate": 0.0,
+    "false_negative_rate": 0.0,
+    "accuracy": 100.0,
+    "avg_latency_ms": 0.0038541527464985847,
+    "p95_latency_ms": 0.005708076059818268
+  },
+  "detailed_results": [
+    {
+      "id": 1,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.009185634553432465,
+      "description": "Alice reads file_0.py that she created"
+    },
+    {
+      "id": 2,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004393979907035828,
+      "description": "Alice reads file_1.py that she created"
+    },
+    {
+      "id": 3,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0034226104617118835,
+      "description": "Alice reads file_2.py that she created"
+    },
+    {
+      "id": 4,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003228895366191864,
+      "description": "Alice reads file_3.py that she created"
+    },
+    {
+      "id": 5,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003133900463581085,
+      "description": "Alice reads file_4.py that she created"
+    },
+    {
+      "id": 6,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003563240170478821,
+      "description": "Alice reads file_5.py that she created"
+    },
+    {
+      "id": 7,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0032829120755195618,
+      "description": "Alice reads file_6.py that she created"
+    },
+    {
+      "id": 8,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0032139942049980164,
+      "description": "Alice reads file_7.py that she created"
+    },
+    {
+      "id": 9,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003191642463207245,
+      "description": "Alice reads file_8.py that she created"
+    },
+    {
+      "id": 10,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0034300610423088074,
+      "description": "Alice reads file_9.py that she created"
+    },
+    {
+      "id": 11,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0037802383303642273,
+      "description": "Bob edits doc_0.md that he created"
+    },
+    {
+      "id": 12,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0031227245926856995,
+      "description": "Bob edits doc_1.md that he created"
+    },
+    {
+      "id": 13,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0030295923352241516,
+      "description": "Bob edits doc_2.md that he created"
+    },
+    {
+      "id": 14,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004578381776809692,
+      "description": "Bob edits doc_3.md that he created"
+    },
+    {
+      "id": 15,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0030975788831710815,
+      "description": "Bob edits doc_4.md that he created"
+    },
+    {
+      "id": 16,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003039836883544922,
+      "description": "Bob edits doc_5.md that he created"
+    },
+    {
+      "id": 17,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.002991408109664917,
+      "description": "Bob edits doc_6.md that he created"
+    },
+    {
+      "id": 18,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0030444934964179993,
+      "description": "Bob edits doc_7.md that he created"
+    },
+    {
+      "id": 19,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0030687078833580017,
+      "description": "Bob edits doc_8.md that he created"
+    },
+    {
+      "id": 20,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003298744559288025,
+      "description": "Bob edits doc_9.md that he created"
+    },
+    {
+      "id": 21,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0034477561712265015,
+      "description": "Charlie deletes temp_0.txt that he created"
+    },
+    {
+      "id": 22,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0036945566534996033,
+      "description": "Charlie deletes temp_1.txt that he created"
+    },
+    {
+      "id": 23,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004623085260391235,
+      "description": "Charlie deletes temp_2.txt that he created"
+    },
+    {
+      "id": 24,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0029811635613441467,
+      "description": "Charlie deletes temp_3.txt that he created"
+    },
+    {
+      "id": 25,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0029746443033218384,
+      "description": "Charlie deletes temp_4.txt that he created"
+    },
+    {
+      "id": 26,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0030463561415672302,
+      "description": "Charlie deletes temp_5.txt that he created"
+    },
+    {
+      "id": 27,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003155320882797241,
+      "description": "Charlie deletes temp_6.txt that he created"
+    },
+    {
+      "id": 28,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0030007213354110718,
+      "description": "Charlie deletes temp_7.txt that he created"
+    },
+    {
+      "id": 29,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0029802322387695312,
+      "description": "Charlie deletes temp_8.txt that he created"
+    },
+    {
+      "id": 30,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0029355287551879883,
+      "description": "Charlie deletes temp_9.txt that he created"
+    },
+    {
+      "id": 31,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.00314321368932724,
+      "description": "Charlie deletes temp_10.txt that he created"
+    },
+    {
+      "id": 32,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004505738615989685,
+      "description": "Charlie deletes temp_11.txt that he created"
+    },
+    {
+      "id": 33,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003116205334663391,
+      "description": "Charlie deletes temp_12.txt that he created"
+    },
+    {
+      "id": 34,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0030426308512687683,
+      "description": "Charlie deletes temp_13.txt that he created"
+    },
+    {
+      "id": 35,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0030007213354110718,
+      "description": "Charlie deletes temp_14.txt that he created"
+    },
+    {
+      "id": 36,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0030742958188056946,
+      "description": "alice reads their own PR #0"
+    },
+    {
+      "id": 37,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004612840712070465,
+      "description": "bob reads their own PR #0"
+    },
+    {
+      "id": 38,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0031096860766410828,
+      "description": "charlie reads their own PR #0"
+    },
+    {
+      "id": 39,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0032186508178710938,
+      "description": "alice reads their own PR #1"
+    },
+    {
+      "id": 40,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0033276155591011047,
+      "description": "bob reads their own PR #1"
+    },
+    {
+      "id": 41,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0030761584639549255,
+      "description": "charlie reads their own PR #1"
+    },
+    {
+      "id": 42,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0030919909477233887,
+      "description": "alice reads their own PR #2"
+    },
+    {
+      "id": 43,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0037178397178649902,
+      "description": "bob reads their own PR #2"
+    },
+    {
+      "id": 44,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.008651986718177795,
+      "description": "charlie reads their own PR #2"
+    },
+    {
+      "id": 45,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003043562173843384,
+      "description": "alice reads their own PR #3"
+    },
+    {
+      "id": 46,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.00310409814119339,
+      "description": "bob reads their own PR #3"
+    },
+    {
+      "id": 47,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003051944077014923,
+      "description": "charlie reads their own PR #3"
+    },
+    {
+      "id": 48,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0030677765607833862,
+      "description": "alice reads their own PR #4"
+    },
+    {
+      "id": 49,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004847534000873566,
+      "description": "bob reads their own PR #4"
+    },
+    {
+      "id": 50,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0032205134630203247,
+      "description": "charlie reads their own PR #4"
+    },
+    {
+      "id": 51,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004637986421585083,
+      "description": "alice reads their own PR #5"
+    },
+    {
+      "id": 52,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003118067979812622,
+      "description": "bob reads their own PR #5"
+    },
+    {
+      "id": 53,
+      "policy": "access_only_created",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003063119947910309,
+      "description": "charlie reads their own PR #5"
+    },
+    {
+      "id": 54,
+      "policy": "access_only_created",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.003744848072528839,
+      "description": "Mallory tries to edit Alice's file_0.py"
+    },
+    {
+      "id": 55,
+      "policy": "access_only_created",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.00310409814119339,
+      "description": "Mallory tries to edit Alice's file_1.py"
+    },
+    {
+      "id": 56,
+      "policy": "access_only_created",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.0029085204005241394,
+      "description": "Mallory tries to edit Alice's file_2.py"
+    },
+    {
+      "id": 57,
+      "policy": "access_only_created",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.0028349459171295166,
+      "description": "Mallory tries to edit Alice's file_3.py"
+    },
+    {
+      "id": 58,
+      "policy": "access_only_created",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.0028330832719802856,
+      "description": "Mallory tries to edit Alice's file_4.py"
+    },
+    {
+      "id": 59,
+      "policy": "access_only_created",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.0029578804969787598,
+      "description": "Mallory tries to edit Alice's file_5.py"
+    },
+    {
+      "id": 60,
+      "policy": "access_only_created",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.003254041075706482,
+      "description": "Mallory tries to edit Alice's file_6.py"
+    },
+    {
+      "id": 61,
+      "policy": "access_only_created",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.0028721988201141357,
+      "description": "Mallory tries to edit Alice's file_7.py"
+    },
+    {
+      "id": 62,
+      "policy": "access_only_created",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.00283215194940567,
+      "description": "Mallory tries to edit Alice's file_8.py"
+    },
+    {
+      "id": 63,
+      "policy": "access_only_created",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.0028870999813079834,
+      "description": "Mallory tries to edit Alice's file_9.py"
+    },
+    {
+      "id": 64,
+      "policy": "access_only_created",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.0036749988794326782,
+      "description": "Eve tries to delete Bob's config_0.json"
+    },
+    {
+      "id": 65,
+      "policy": "access_only_created",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.0031441450119018555,
+      "description": "Eve tries to delete Bob's config_1.json"
+    },
+    {
+      "id": 66,
+      "policy": "access_only_created",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.0030836090445518494,
+      "description": "Eve tries to delete Bob's config_2.json"
+    },
+    {
+      "id": 67,
+      "policy": "access_only_created",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.0030491501092910767,
+      "description": "Eve tries to delete Bob's config_3.json"
+    },
+    {
+      "id": 68,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.007261522114276886,
+      "description": "Alice writes to output_0.csv for the first time"
+    },
+    {
+      "id": 69,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003470107913017273,
+      "description": "Alice writes to output_1.csv for the first time"
+    },
+    {
+      "id": 70,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0032410025596618652,
+      "description": "Alice writes to output_2.csv for the first time"
+    },
+    {
+      "id": 71,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0032531097531318665,
+      "description": "Alice writes to output_3.csv for the first time"
+    },
+    {
+      "id": 72,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0032139942049980164,
+      "description": "Alice writes to output_4.csv for the first time"
+    },
+    {
+      "id": 73,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0032009556889533997,
+      "description": "Alice writes to output_5.csv for the first time"
+    },
+    {
+      "id": 74,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003384426236152649,
+      "description": "Alice writes to output_6.csv for the first time"
+    },
+    {
+      "id": 75,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0031776726245880127,
+      "description": "Alice writes to output_7.csv for the first time"
+    },
+    {
+      "id": 76,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004978850483894348,
+      "description": "Alice writes to output_8.csv for the first time"
+    },
+    {
+      "id": 77,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003444962203502655,
+      "description": "Alice writes to output_9.csv for the first time"
+    },
+    {
+      "id": 78,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0032549723982810974,
+      "description": "Alice writes to output_10.csv for the first time"
+    },
+    {
+      "id": 79,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0033099204301834106,
+      "description": "Alice writes to output_11.csv for the first time"
+    },
+    {
+      "id": 80,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003421679139137268,
+      "description": "Alice writes to output_12.csv for the first time"
+    },
+    {
+      "id": 81,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0031888484954833984,
+      "description": "Alice writes to output_13.csv for the first time"
+    },
+    {
+      "id": 82,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0032186508178710938,
+      "description": "Alice writes to output_14.csv for the first time"
+    },
+    {
+      "id": 83,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0031189993023872375,
+      "description": "Alice writes to output_15.csv for the first time"
+    },
+    {
+      "id": 84,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0031692907214164734,
+      "description": "Alice writes to output_16.csv for the first time"
+    },
+    {
+      "id": 85,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003170222043991089,
+      "description": "Alice writes to output_17.csv for the first time"
+    },
+    {
+      "id": 86,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003127381205558777,
+      "description": "Alice writes to output_18.csv for the first time"
+    },
+    {
+      "id": 87,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003209337592124939,
+      "description": "Alice writes to output_19.csv for the first time"
+    },
+    {
+      "id": 88,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003337860107421875,
+      "description": "Alice writes to output_20.csv for the first time"
+    },
+    {
+      "id": 89,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003308989107608795,
+      "description": "Alice writes to output_21.csv for the first time"
+    },
+    {
+      "id": 90,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0032065436244010925,
+      "description": "Alice writes to output_22.csv for the first time"
+    },
+    {
+      "id": 91,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.005027279257774353,
+      "description": "Alice writes to output_23.csv for the first time"
+    },
+    {
+      "id": 92,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004841946065425873,
+      "description": "Alice writes to output_24.csv for the first time"
+    },
+    {
+      "id": 93,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004995614290237427,
+      "description": "Alice writes to output_25.csv for the first time"
+    },
+    {
+      "id": 94,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0033015385270118713,
+      "description": "Alice writes to output_26.csv for the first time"
+    },
+    {
+      "id": 95,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003178603947162628,
+      "description": "Alice writes to output_27.csv for the first time"
+    },
+    {
+      "id": 96,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004542991518974304,
+      "description": "Alice writes to output_28.csv for the first time"
+    },
+    {
+      "id": 97,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003300607204437256,
+      "description": "Alice writes to output_29.csv for the first time"
+    },
+    {
+      "id": 98,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0034384429454803467,
+      "description": "Bob reads log_0.txt (reading is not writing)"
+    },
+    {
+      "id": 99,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003135763108730316,
+      "description": "Bob reads log_1.txt (reading is not writing)"
+    },
+    {
+      "id": 100,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0032065436244010925,
+      "description": "Bob reads log_2.txt (reading is not writing)"
+    },
+    {
+      "id": 101,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0032549723982810974,
+      "description": "Bob reads log_3.txt (reading is not writing)"
+    },
+    {
+      "id": 102,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003061257302761078,
+      "description": "Bob reads log_4.txt (reading is not writing)"
+    },
+    {
+      "id": 103,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0030295923352241516,
+      "description": "Bob reads log_5.txt (reading is not writing)"
+    },
+    {
+      "id": 104,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0032065436244010925,
+      "description": "Bob reads log_6.txt (reading is not writing)"
+    },
+    {
+      "id": 105,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003086403012275696,
+      "description": "Bob reads log_7.txt (reading is not writing)"
+    },
+    {
+      "id": 106,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0030724331736564636,
+      "description": "Bob reads log_8.txt (reading is not writing)"
+    },
+    {
+      "id": 107,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0030798837542533875,
+      "description": "Bob reads log_9.txt (reading is not writing)"
+    },
+    {
+      "id": 108,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0031152740120887756,
+      "description": "Bob reads log_10.txt (reading is not writing)"
+    },
+    {
+      "id": 109,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003080815076828003,
+      "description": "Bob reads log_11.txt (reading is not writing)"
+    },
+    {
+      "id": 110,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.010475516319274902,
+      "description": "Bob reads log_12.txt (reading is not writing)"
+    },
+    {
+      "id": 111,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0030742958188056946,
+      "description": "Bob reads log_13.txt (reading is not writing)"
+    },
+    {
+      "id": 112,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.01897849142551422,
+      "description": "Bob reads log_14.txt (reading is not writing)"
+    },
+    {
+      "id": 113,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004967674612998962,
+      "description": "Bob reads log_15.txt (reading is not writing)"
+    },
+    {
+      "id": 114,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.00322144478559494,
+      "description": "Bob reads log_16.txt (reading is not writing)"
+    },
+    {
+      "id": 115,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0033015385270118713,
+      "description": "Bob reads log_17.txt (reading is not writing)"
+    },
+    {
+      "id": 116,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0033909454941749573,
+      "description": "Bob reads log_18.txt (reading is not writing)"
+    },
+    {
+      "id": 117,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0033443793654441833,
+      "description": "Bob reads log_19.txt (reading is not writing)"
+    },
+    {
+      "id": 118,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0032996758818626404,
+      "description": "Bob reads log_20.txt (reading is not writing)"
+    },
+    {
+      "id": 119,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003244727849960327,
+      "description": "Bob reads log_21.txt (reading is not writing)"
+    },
+    {
+      "id": 120,
+      "policy": "write_at_most_once",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0033052638173103333,
+      "description": "Bob reads log_22.txt (reading is not writing)"
+    },
+    {
+      "id": 121,
+      "policy": "write_at_most_once",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.003754161298274994,
+      "description": "Charlie tries to write to record_0.json again"
+    },
+    {
+      "id": 122,
+      "policy": "write_at_most_once",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.0034812837839126587,
+      "description": "Charlie tries to write to record_1.json again"
+    },
+    {
+      "id": 123,
+      "policy": "write_at_most_once",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.0035902485251426697,
+      "description": "Charlie tries to write to record_2.json again"
+    },
+    {
+      "id": 124,
+      "policy": "write_at_most_once",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.003355555236339569,
+      "description": "Charlie tries to write to record_3.json again"
+    },
+    {
+      "id": 125,
+      "policy": "write_at_most_once",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.0035138800740242004,
+      "description": "Charlie tries to write to record_4.json again"
+    },
+    {
+      "id": 126,
+      "policy": "write_at_most_once",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.0033676624298095703,
+      "description": "Charlie tries to write to record_5.json again"
+    },
+    {
+      "id": 127,
+      "policy": "write_at_most_once",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.0033490359783172607,
+      "description": "Charlie tries to write to record_6.json again"
+    },
+    {
+      "id": 128,
+      "policy": "write_at_most_once",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.0033229589462280273,
+      "description": "Charlie tries to write to record_7.json again"
+    },
+    {
+      "id": 129,
+      "policy": "write_at_most_once",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.0034105032682418823,
+      "description": "Charlie tries to write to record_8.json again"
+    },
+    {
+      "id": 130,
+      "policy": "write_at_most_once",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.003403984010219574,
+      "description": "Charlie tries to write to record_9.json again"
+    },
+    {
+      "id": 131,
+      "policy": "write_at_most_once",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.003956258296966553,
+      "description": "Dave tries to modify immutable_0.yaml"
+    },
+    {
+      "id": 132,
+      "policy": "write_at_most_once",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.004974193871021271,
+      "description": "Dave tries to modify immutable_1.yaml"
+    },
+    {
+      "id": 133,
+      "policy": "write_at_most_once",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.003429129719734192,
+      "description": "Dave tries to modify immutable_2.yaml"
+    },
+    {
+      "id": 134,
+      "policy": "write_at_most_once",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.0036088749766349792,
+      "description": "Dave tries to modify immutable_3.yaml"
+    },
+    {
+      "id": 135,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0061355531215667725,
+      "description": "Alice merges pr_0 (created by her, reviewed by reviewer1)"
+    },
+    {
+      "id": 136,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004414469003677368,
+      "description": "Alice merges pr_0 (created by her, reviewed by reviewer2)"
+    },
+    {
+      "id": 137,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0040335580706596375,
+      "description": "Alice merges pr_0 (created by her, reviewed by reviewer3)"
+    },
+    {
+      "id": 138,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0038603320717811584,
+      "description": "Alice merges pr_1 (created by her, reviewed by reviewer1)"
+    },
+    {
+      "id": 139,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003839842975139618,
+      "description": "Alice merges pr_1 (created by her, reviewed by reviewer2)"
+    },
+    {
+      "id": 140,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004077330231666565,
+      "description": "Alice merges pr_1 (created by her, reviewed by reviewer3)"
+    },
+    {
+      "id": 141,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003919005393981934,
+      "description": "Alice merges pr_2 (created by her, reviewed by reviewer1)"
+    },
+    {
+      "id": 142,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003859400749206543,
+      "description": "Alice merges pr_2 (created by her, reviewed by reviewer2)"
+    },
+    {
+      "id": 143,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003839842975139618,
+      "description": "Alice merges pr_2 (created by her, reviewed by reviewer3)"
+    },
+    {
+      "id": 144,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.00388268381357193,
+      "description": "Alice merges pr_3 (created by her, reviewed by reviewer1)"
+    },
+    {
+      "id": 145,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0038482248783111572,
+      "description": "Alice merges pr_3 (created by her, reviewed by reviewer2)"
+    },
+    {
+      "id": 146,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003896653652191162,
+      "description": "Alice merges pr_3 (created by her, reviewed by reviewer3)"
+    },
+    {
+      "id": 147,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003910623490810394,
+      "description": "Alice merges pr_4 (created by her, reviewed by reviewer1)"
+    },
+    {
+      "id": 148,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0038603320717811584,
+      "description": "Alice merges pr_4 (created by her, reviewed by reviewer2)"
+    },
+    {
+      "id": 149,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003839842975139618,
+      "description": "Alice merges pr_4 (created by her, reviewed by reviewer3)"
+    },
+    {
+      "id": 150,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004071742296218872,
+      "description": "Alice merges pr_5 (created by her, reviewed by reviewer1)"
+    },
+    {
+      "id": 151,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0038780272006988525,
+      "description": "Alice merges pr_5 (created by her, reviewed by reviewer2)"
+    },
+    {
+      "id": 152,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0038892030715942383,
+      "description": "Alice merges pr_5 (created by her, reviewed by reviewer3)"
+    },
+    {
+      "id": 153,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004208646714687347,
+      "description": "Alice merges pr_6 (created by her, reviewed by reviewer1)"
+    },
+    {
+      "id": 154,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0038743019104003906,
+      "description": "Alice merges pr_6 (created by her, reviewed by reviewer2)"
+    },
+    {
+      "id": 155,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003851950168609619,
+      "description": "Alice merges pr_6 (created by her, reviewed by reviewer3)"
+    },
+    {
+      "id": 156,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004118308424949646,
+      "description": "Alice merges pr_7 (created by her, reviewed by reviewer1)"
+    },
+    {
+      "id": 157,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.005388632416725159,
+      "description": "Alice merges pr_7 (created by her, reviewed by reviewer2)"
+    },
+    {
+      "id": 158,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0038119032979011536,
+      "description": "Alice merges pr_7 (created by her, reviewed by reviewer3)"
+    },
+    {
+      "id": 159,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.005670823156833649,
+      "description": "Alice merges pr_8 (created by her, reviewed by reviewer1)"
+    },
+    {
+      "id": 160,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003976747393608093,
+      "description": "Alice merges pr_8 (created by her, reviewed by reviewer2)"
+    },
+    {
+      "id": 161,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003871507942676544,
+      "description": "Alice merges pr_8 (created by her, reviewed by reviewer3)"
+    },
+    {
+      "id": 162,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004149042069911957,
+      "description": "Alice merges pr_9 (created by her, reviewed by reviewer1)"
+    },
+    {
+      "id": 163,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0039245933294296265,
+      "description": "Alice merges pr_9 (created by her, reviewed by reviewer2)"
+    },
+    {
+      "id": 164,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0038119032979011536,
+      "description": "Alice merges pr_9 (created by her, reviewed by reviewer3)"
+    },
+    {
+      "id": 165,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004392117261886597,
+      "description": "Bob merges pr_0 (2 reviews)"
+    },
+    {
+      "id": 166,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004064291715621948,
+      "description": "Bob merges pr_1 (2 reviews)"
+    },
+    {
+      "id": 167,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0039869919419288635,
+      "description": "Bob merges pr_2 (2 reviews)"
+    },
+    {
+      "id": 168,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004027038812637329,
+      "description": "Bob merges pr_3 (2 reviews)"
+    },
+    {
+      "id": 169,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0040726736187934875,
+      "description": "Bob merges pr_4 (2 reviews)"
+    },
+    {
+      "id": 170,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.003974884748458862,
+      "description": "Bob merges pr_5 (2 reviews)"
+    },
+    {
+      "id": 171,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004238449037075043,
+      "description": "Bob merges pr_6 (2 reviews)"
+    },
+    {
+      "id": 172,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004216097295284271,
+      "description": "Bob merges pr_7 (2 reviews)"
+    },
+    {
+      "id": 173,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004182569682598114,
+      "description": "Bob merges pr_8 (2 reviews)"
+    },
+    {
+      "id": 174,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.005708076059818268,
+      "description": "Bob merges pr_9 (2 reviews)"
+    },
+    {
+      "id": 175,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004202127456665039,
+      "description": "Bob merges pr_10 (2 reviews)"
+    },
+    {
+      "id": 176,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004156492650508881,
+      "description": "Bob merges pr_11 (2 reviews)"
+    },
+    {
+      "id": 177,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004324130713939667,
+      "description": "Charlie merges pr_0 (3 reviews)"
+    },
+    {
+      "id": 178,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0057853758335113525,
+      "description": "Charlie merges pr_1 (3 reviews)"
+    },
+    {
+      "id": 179,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.006017275154590607,
+      "description": "Charlie merges pr_2 (3 reviews)"
+    },
+    {
+      "id": 180,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.00455416738986969,
+      "description": "Charlie merges pr_3 (3 reviews)"
+    },
+    {
+      "id": 181,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0042477622628211975,
+      "description": "Charlie merges pr_4 (3 reviews)"
+    },
+    {
+      "id": 182,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004063360393047333,
+      "description": "Charlie merges pr_5 (3 reviews)"
+    },
+    {
+      "id": 183,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004287809133529663,
+      "description": "Charlie merges pr_6 (3 reviews)"
+    },
+    {
+      "id": 184,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004266388714313507,
+      "description": "Charlie merges pr_7 (3 reviews)"
+    },
+    {
+      "id": 185,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.0044014304876327515,
+      "description": "Charlie merges pr_8 (3 reviews)"
+    },
+    {
+      "id": 186,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004257075488567352,
+      "description": "Charlie merges pr_9 (3 reviews)"
+    },
+    {
+      "id": 187,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.004417262971401215,
+      "description": "Charlie merges pr_10 (3 reviews)"
+    },
+    {
+      "id": 188,
+      "policy": "created_and_reviewed",
+      "request_type": "legitimate",
+      "expected": "PERMIT",
+      "actual": "PERMIT",
+      "correct": true,
+      "latency_ms": 0.006075017154216766,
+      "description": "Charlie merges pr_11 (3 reviews)"
+    },
+    {
+      "id": 189,
+      "policy": "created_and_reviewed",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.003653578460216522,
+      "description": "Mallory tries to merge Alice's pr_0"
+    },
+    {
+      "id": 190,
+      "policy": "created_and_reviewed",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.0034188851714134216,
+      "description": "Mallory tries to merge Alice's pr_1"
+    },
+    {
+      "id": 191,
+      "policy": "created_and_reviewed",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.0033481046557426453,
+      "description": "Mallory tries to merge Alice's pr_2"
+    },
+    {
+      "id": 192,
+      "policy": "created_and_reviewed",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.0033481046557426453,
+      "description": "Mallory tries to merge Alice's pr_3"
+    },
+    {
+      "id": 193,
+      "policy": "created_and_reviewed",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.004132278263568878,
+      "description": "Eve tries to merge unreviewed pr_0"
+    },
+    {
+      "id": 194,
+      "policy": "created_and_reviewed",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.0040959566831588745,
+      "description": "Eve tries to merge unreviewed pr_1"
+    },
+    {
+      "id": 195,
+      "policy": "created_and_reviewed",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.005402602255344391,
+      "description": "Eve tries to merge unreviewed pr_2"
+    },
+    {
+      "id": 196,
+      "policy": "created_and_reviewed",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.003839842975139618,
+      "description": "Eve tries to merge unreviewed pr_3"
+    },
+    {
+      "id": 197,
+      "policy": "created_and_reviewed",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.004139728844165802,
+      "description": "Dave tries to merge pr_0 with only self-review"
+    },
+    {
+      "id": 198,
+      "policy": "created_and_reviewed",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.003955326974391937,
+      "description": "Dave tries to merge pr_1 with only self-review"
+    },
+    {
+      "id": 199,
+      "policy": "created_and_reviewed",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.003996305167675018,
+      "description": "Dave tries to merge pr_2 with only self-review"
+    },
+    {
+      "id": 200,
+      "policy": "created_and_reviewed",
+      "request_type": "dangerous",
+      "expected": "DENY",
+      "actual": "DENY",
+      "correct": true,
+      "latency_ms": 0.004155561327934265,
+      "description": "Dave tries to merge pr_3 with only self-review"
+    }
+  ]
+}
