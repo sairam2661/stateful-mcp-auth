@@ -15,6 +15,8 @@ This project implements and evaluates stateful authorization for MCP servers, de
 ## Quick Start
 ```bash
 # Install dependencies
+cargo add cedar
+cargo build
 pip install fastmcp tabulate
 
 # Run MCP server evaluation
