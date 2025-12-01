@@ -141,7 +141,7 @@ class GitHubTestDataset:
                     resource_state={"created_by": user}
                 )
         
-        for i in range(10):
+        for i in range(5):
             self._add_request(
                 policy, RequestType.DANGEROUS,
                 principal="mallory",
@@ -151,6 +151,18 @@ class GitHubTestDataset:
                 expected_decision="DENY",
                 principal_state={"created_resources": []},
                 resource_state={"created_by": "alice"}
+            )
+            
+        for i in range(5):
+            self._add_request(
+                policy, RequestType.DANGEROUS,
+                principal="alice",
+                action="edit_file",
+                resource=f"src/bob_file_{i}.py",
+                description=f"Alice tries to edit Bob's file_{i}.py",
+                expected_decision="DENY",
+                principal_state={"created_resources": []},  # Alice didn't create this
+                resource_state={"created_by": "bob"}
             )
         
         for i in range(4):
@@ -192,7 +204,7 @@ class GitHubTestDataset:
                 resource_state={"written_by": ["bob"]}
             )
         
-        for i in range(10):
+        for i in range(5):
             self._add_request(
                 policy, RequestType.DANGEROUS,
                 principal="charlie",
@@ -214,6 +226,38 @@ class GitHubTestDataset:
                 expected_decision="DENY",
                 principal_state={"written_resources": [f"config/immutable_{i}.yaml"]},
                 resource_state={"written_by": ["dave"]}
+            )
+            
+        for i in range(3):
+            self._add_request(
+                policy, RequestType.DANGEROUS,
+                principal="eve",
+                action="write_file",
+                resource=f"spam/spam_{i}.txt",
+                description=f"Eve tries to write spam_{i}.txt (already wrote 5+ files)",
+                expected_decision="DENY",
+                principal_state={"written_resources": [
+                    "spam/file_0.txt",
+                    "spam/file_1.txt",
+                    "spam/file_2.txt",
+                    "spam/file_3.txt",
+                    "spam/file_4.txt",  # Already at limit
+                ]},
+                resource_state={"written_by": []}
+            )
+        
+        for i in range(2):
+            self._add_request(
+                policy, RequestType.DANGEROUS,
+                principal="mallory",
+                action="write_file",
+                resource=f"attack/payload_{i}.bin",
+                description=f"Mallory tries write #{10+i} (runaway loop)",
+                expected_decision="DENY",
+                principal_state={"written_resources": [
+                    f"attack/loop_{j}.txt" for j in range(10)  # Already wrote 10 files
+                ]},
+                resource_state={"written_by": []}
             )
     
     def generate_created_and_reviewed_tests(self):
