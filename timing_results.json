@@ -1,0 +1,52 @@
+{
+  "overall": {
+    "context_build": 0.0511658750474453,
+    "subprocess_overhead": 138.455603202796,
+    "cedar_parse_policy": 2.7916,
+    "cedar_parse_context": 4.90804,
+    "cedar_parse_entities": 0.011265,
+    "cedar_build_request": 0.001645,
+    "cedar_authorization": 0.11848,
+    "cedar_total": 10.62665,
+    "state_update": 0.007867086678743362,
+    "total": 149.20192578807473
+  },
+  "by_policy": {
+    "access_only_created": {
+      "context_build": 0.044623042331702674,
+      "subprocess_overhead": 149.6578193717252,
+      "cedar_parse_policy": 2.631791044776119,
+      "cedar_parse_context": 4.997776119402985,
+      "cedar_parse_entities": 0.011238805970149254,
+      "cedar_build_request": 0.0016567164179104477,
+      "cedar_authorization": 0.10355223880597014,
+      "cedar_total": 10.615835820895523,
+      "state_update": 0.0028719903150601174,
+      "total": 160.38162731079024
+    },
+    "write_at_most_once": {
+      "context_build": 0.04496660305937724,
+      "subprocess_overhead": 132.60027682681226,
+      "cedar_parse_policy": 3.0320597014925372,
+      "cedar_parse_context": 4.811238805970149,
+      "cedar_parse_entities": 0.010537313432835822,
+      "cedar_build_request": 0.0013582089552238805,
+      "cedar_authorization": 0.13214925373134329,
+      "cedar_total": 10.705059701492537,
+      "state_update": 0.008672642618862551,
+      "total": 143.42206188324673
+    },
+    "created_and_reviewed": {
+      "context_build": 0.06410104194373796,
+      "subprocess_overhead": 133.02769992813919,
+      "cedar_parse_policy": 2.7097272727272723,
+      "cedar_parse_context": 4.915212121212121,
+      "cedar_parse_entities": 0.012030303030303032,
+      "cedar_build_request": 0.0019242424242424242,
+      "cedar_authorization": 0.11975757575757576,
+      "cedar_total": 10.558030303030304,
+      "state_update": 0.012120104987512936,
+      "total": 143.72027244870412
+    }
+  }
+}
