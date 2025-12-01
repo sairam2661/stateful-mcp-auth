@@ -1,33 +1,41 @@
-from dataclasses import dataclass
-from typing import List, Dict
+from dataclasses import dataclass, field
+from typing import Set
 from policy_auth import PolicyAuthorizer, StatefulPolicy
 
 
 @dataclass
 class CreatedAndReviewedState:
-    # Map from principal_id to list of resources they created
-    created_by_principal: Dict[str, List[str]]
-    # Map from resource_id to list of principals who reviewed it
-    reviewed_by: Dict[str, List[str]]
+    created: Set[str] = field(default_factory=set)
+    reviewed: Set[str] = field(default_factory=set)
 
 
-def state_updater(state: CreatedAndReviewedState, principal_id: str, action: str, resource_id: str) -> CreatedAndReviewedState:
-    # Track creation and reviews
-    created = state.created_by_principal.copy()
-    reviewed = state.reviewed_by.copy()
-    
+def state_updater(
+    state: CreatedAndReviewedState, principal_id: str, action: str, resource_id: str
+) -> CreatedAndReviewedState:
+    created = state.created.copy()
+    reviewed = state.reviewed.copy()
+
     if action in ["create_file", "create_pr"]:
-        if principal_id not in created:
-            created[principal_id] = []
-        created[principal_id] = created[principal_id] + [resource_id]
-    
-    if action == "review_pr":
-        if resource_id not in reviewed:
-            reviewed[resource_id] = []
-        reviewed[resource_id] = reviewed[resource_id] + [principal_id]
-    
-    return CreatedAndReviewedState(created_by_principal=created, reviewed_by=reviewed)
+        created.add(f"{principal_id}:{resource_id}")
 
+    if action == "review_pr":
+        reviewed.add(f"{principal_id}:{resource_id}")
+
+    return CreatedAndReviewedState(created=created, reviewed=reviewed)
+
+
+def context_builder(
+    state: CreatedAndReviewedState, principal_id: str, resource_id: str
+) -> dict:
+    return {
+        "created": list(state.created),
+        "reviewed": list(state.reviewed),
+        "access_key": f"{principal_id}:{resource_id}",
+        "has_other_reviewers": any(
+            r.endswith(f":{resource_id}") and not r.startswith(f"{principal_id}:")
+            for r in state.reviewed
+        ),
+    }
 
 policy = """
 permit(
@@ -35,17 +43,19 @@ permit(
     action,
     resource
 ) when {
-    context.created_by_principal.has(principal) &&
-    context.created_by_principal[principal].contains(resource) &&
-    context.reviewed_by.has(resource) &&
-    context.reviewed_by[resource].containsAny([principal]) == false
+    context.created.contains(context.access_key) &&
+    context.has_other_reviewers == true
 };
 """
 
 
 def build_created_and_reviewed() -> PolicyAuthorizer[CreatedAndReviewedState]:
-    stateful_policy = StatefulPolicy(policy=policy, state_updater=state_updater)
+    stateful_policy = StatefulPolicy(
+        policy=policy,
+        state_updater=state_updater,
+        context_builder=context_builder,
+    )
     return PolicyAuthorizer(
         stateful_policy,
-        CreatedAndReviewedState(created_by_principal={}, reviewed_by={})
+        CreatedAndReviewedState(created=set(), reviewed=set()),
     )

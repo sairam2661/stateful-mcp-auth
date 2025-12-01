@@ -1,23 +1,30 @@
-from dataclasses import dataclass
-from typing import List, Dict
+from dataclasses import dataclass, field
+from typing import Set
 from policy_auth import PolicyAuthorizer, StatefulPolicy
 
 
 @dataclass
 class WriteAtMostOnceState:
-    # Map from principal_id to list of resources they wrote to
-    written_by_principal: Dict[str, List[str]]
+    written: Set[str] = field(default_factory=set)
 
 
-def state_updater(state: WriteAtMostOnceState, principal_id: str, action: str, resource_id: str) -> WriteAtMostOnceState:
-    # Track when principals write or edit resources
+def state_updater(
+    state: WriteAtMostOnceState, principal_id: str, action: str, resource_id: str
+) -> WriteAtMostOnceState:
     if action in ["write_file", "edit_file"]:
-        written = state.written_by_principal.copy()
-        if principal_id not in written:
-            written[principal_id] = []
-        written[principal_id] = written[principal_id] + [resource_id]
-        return WriteAtMostOnceState(written_by_principal=written)
+        new_written = state.written.copy()
+        new_written.add(f"{principal_id}:{resource_id}")
+        return WriteAtMostOnceState(written=new_written)
     return state
+
+
+def context_builder(
+    state: WriteAtMostOnceState, principal_id: str, resource_id: str
+) -> dict:
+    return {
+        "written": list(state.written),
+        "access_key": f"{principal_id}:{resource_id}",
+    }
 
 
 policy = """
@@ -26,15 +33,27 @@ permit(
     action,
     resource
 ) when {
-    !context.written_by_principal.has(principal) ||
-    !context.written_by_principal[principal].contains(resource)
+    action != Action::"write_file" && action != Action::"edit_file"
+};
+
+permit(
+    principal,
+    action,
+    resource
+) when {
+    (action == Action::"write_file" || action == Action::"edit_file") &&
+    context.written.contains(context.access_key) == false
 };
 """
 
 
 def build_write_at_most_once() -> PolicyAuthorizer[WriteAtMostOnceState]:
-    stateful_policy = StatefulPolicy(policy=policy, state_updater=state_updater)
+    stateful_policy = StatefulPolicy(
+        policy=policy,
+        state_updater=state_updater,
+        context_builder=context_builder,
+    )
     return PolicyAuthorizer(
         stateful_policy,
-        WriteAtMostOnceState(written_by_principal={})
+        WriteAtMostOnceState(written=set()),
     )
